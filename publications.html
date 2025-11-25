@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Bishal Yadav - Publications</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.6s ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed top-0 w-full z-50">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <a href="index.html" class="flex items-center space-x-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="text-blue-600"
+            >
+              <path
+                d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a4 4 0 0 0 8 0v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.3.3 0 1 0 .2.6V4a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2.9a.3.3 0 0 0 .8-.6Z"
+              />
+              <path d="M4 8v2" />
+              <path d="M20 8v2" />
+              <circle cx="12" cy="16" r="2" />
+              <path d="M2 2v20h20" />
+            </svg>
+            <div class="text-2xl font-bold text-blue-600">Dr. Bishal Yadav</div>
+          </a>
+          <div class="hidden md:flex space-x-6">
+            <a
+              href="bio.html"
+              class="text-gray-700 hover:text-blue-600 transition-colors"
+              >Bio</a
+            >
+            <a
+              href="education.html"
+              class="text-gray-700 hover:text-blue-600 transition-colors"
+              >Education</a
+            >
+            <a
+              href="experience.html"
+              class="text-gray-700 hover:text-blue-600 transition-colors"
+              >Experience</a
+            >
+            <a
+              href="publications.html"
+              class="text-gray-700 hover:text-blue-600 transition-colors"
+              >Publications</a
+            >
+            <a
+              href="certifications.html"
+              class="text-gray-700 hover:text-blue-600 transition-colors"
+              >Certifications</a
+            >
+            <a
+              href="memories.html"
+              class="text-gray-700 hover:text-blue-600 transition-colors"
+              >Memories</a
+            >
+          </div>
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-gray-700 focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-100 py-4">
+          <a
+            href="bio.html"
+            class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+            >Bio</a
+          >
+          <a
+            href="education.html"
+            class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+            >Education</a
+          >
+          <a
+            href="experience.html"
+            class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+            >Experience</a
+          >
+          <a
+            href="publications.html"
+            class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+            >Publications</a
+          >
+          <a
+            href="certifications.html"
+            class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+            >Certifications</a
+          >
+          <a
+            href="memories.html"
+            class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+            >Memories</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <div class="min-h-screen bg-gray-50 pt-24 pb-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-16">
+            <div class="flex justify-center mb-6">
+              <div class="bg-blue-100 p-4 rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="text-blue-600"
+                >
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                  <path d="M6 8h2" />
+                  <path d="M6 12h2" />
+                  <path d="M16 8h2" />
+                  <path d="M16 12h2" />
+                </svg>
+              </div>
+            </div>
+            <h1 class="text-5xl font-bold text-gray-800 mb-4">Publications</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Contributing to medical literature through research and case
+              reports
+            </p>
+          </div>
+
+          <div class="space-y-10">
+            <div
+              class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1"
+            >
+              <div class="md:flex">
+                <!-- Left Icon Section -->
+                <div
+                  class="bg-gradient-to-br from-blue-600 to-blue-800 p-8 flex items-center justify-center md:w-1/5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="56"
+                    height="56"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="text-white"
+                  >
+                    <path
+                      d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"
+                    />
+                    <polyline points="14,2 14,8 20,8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                    <line x1="10" y1="9" x2="8" y2="9" />
+                  </svg>
+                </div>
+
+                <!-- Right Content Section -->
+                <div class="p-8 md:p-10 md:w-4/5">
+                  <div class="flex flex-wrap items-start justify-between mb-4">
+                    <div class="flex-1">
+                      <h3
+                        class="text-2xl font-bold text-gray-800 mb-3 leading-tight"
+                      >
+                        Patterns of Presentation and Prevalence of
+                        Fissure-in-Ano in a Tertiary Care Hospital. A
+                        descriptive study.
+                      </h3>
+                    </div>
+                    <div class="ml-4">
+                      <span
+                        class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-md whitespace-nowrap"
+                      >
+                        July-Aug 2025
+                      </span>
+                    </div>
+                  </div>
+
+                  <p class="text-blue-600 font-semibold text-lg mb-4 italic">
+                    OHJN
+                  </p>
+
+                  <p class="text-gray-700 mb-4 leading-relaxed">
+                    A descriptive study examining the patterns of presentation
+                    and prevalence of fissure-in-ano in a tertiary care
+                    hospital.
+                  </p>
+
+                  <div class="mb-4">
+                    <p
+                      class="text-gray-800 font-mono text-sm bg-gray-50 p-3 rounded-lg border border-gray-200"
+                    >
+                      Shrestha BK, Acharya BP, Bhandari N, Yadav B, Shrestha SB.
+                      Patterns of Presentation and Prevalence of Fissure-in-Ano
+                      in a Tertiary Care Hospital. A descriptive study. OHJN
+                      2025 July-Aug;05(02):60-63.
+                    </p>
+                  </div>
+
+                  <div class="flex flex-wrap gap-3 items-center mb-4">
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm font-semibold"
+                    >
+                      DOI:
+                    </span>
+                  </div>
+
+                  <a
+                    href="https://journals.onehealth.edu.np/index.php/home/article/view/189/165"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-md hover:shadow-lg"
+                  >
+                    <span>Read Full Article</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      />
+                      <polyline points="15,3 21,3 21,9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1"
+            >
+              <div class="md:flex">
+                <!-- Left Icon Section -->
+                <div
+                  class="bg-gradient-to-br from-blue-600 to-blue-800 p-8 flex items-center justify-center md:w-1/5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="56"
+                    height="56"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="text-white"
+                  >
+                    <path
+                      d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"
+                    />
+                    <polyline points="14,2 14,8 20,8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                    <line x1="10" y1="9" x2="8" y2="9" />
+                  </svg>
+                </div>
+
+                <!-- Right Content Section -->
+                <div class="p-8 md:p-10 md:w-4/5">
+                  <div class="flex flex-wrap items-start justify-between mb-4">
+                    <div class="flex-1">
+                      <h3
+                        class="text-2xl font-bold text-gray-800 mb-3 leading-tight"
+                      >
+                        Pediatric Usher Syndrome Type 2A with Coexisting
+                        Rheumatic Heart Disease and Upper Gastro-Intestinal
+                        Bleed: A Case Report
+                      </h3>
+                    </div>
+                    <div class="ml-4">
+                      <span
+                        class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-md whitespace-nowrap"
+                      >
+                        December 2024
+                      </span>
+                    </div>
+                  </div>
+
+                  <p class="text-blue-600 font-semibold text-lg mb-4 italic">
+                    JNMA J Nepal Med Assoc
+                  </p>
+
+                  <p class="text-gray-700 mb-4 leading-relaxed">
+                    A comprehensive case report on a pediatric patient
+                    presenting with Usher Syndrome Type 2A complicated by
+                    Rheumatic Heart Disease and Upper Gastro-Intestinal
+                    bleeding, highlighting the complexity of managing multiple
+                    comorbidities in pediatric care.
+                  </p>
+
+                  <div class="mb-4">
+                    <p
+                      class="text-gray-800 font-mono text-sm bg-gray-50 p-3 rounded-lg border border-gray-200"
+                    >
+                      Yadav B, Khadka T, Shah TJ, Phuyal MP, Lamichane R,
+                      Chaurasiya B. JNMA J Nepal Med Assoc. 2024
+                      Dec;62(280):847–9.
+                    </p>
+                  </div>
+
+                  <div class="flex flex-wrap gap-3 items-center mb-4">
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm font-semibold"
+                    >
+                      DOI: 10.31729/jnma.8842
+                    </span>
+                    <span
+                      class="bg-purple-100 text-purple-800 px-3 py-1 rounded-lg text-sm font-semibold"
+                    >
+                      PMCID: PMC11930049
+                    </span>
+                  </div>
+
+                  <a
+                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11930049/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-md hover:shadow-lg"
+                  >
+                    <span>Read Full Article</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      />
+                      <polyline points="15,3 21,3 21,9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-1"
+            >
+              <div class="md:flex">
+                <!-- Left Icon Section -->
+                <div
+                  class="bg-gradient-to-br from-blue-600 to-blue-800 p-8 flex items-center justify-center md:w-1/5"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="56"
+                    height="56"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="text-white"
+                  >
+                    <path
+                      d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"
+                    />
+                    <polyline points="14,2 14,8 20,8" />
+                    <line x1="16" y1="13" x2="8" y2="13" />
+                    <line x1="16" y1="17" x2="8" y2="17" />
+                    <line x1="10" y1="9" x2="8" y2="9" />
+                  </svg>
+                </div>
+
+                <!-- Right Content Section -->
+                <div class="p-8 md:p-10 md:w-4/5">
+                  <div class="flex flex-wrap items-start justify-between mb-4">
+                    <div class="flex-1">
+                      <h3
+                        class="text-2xl font-bold text-gray-800 mb-3 leading-tight"
+                      >
+                        Anaphylaxis: Act Now or Never
+                      </h3>
+                    </div>
+                    <div class="ml-4">
+                      <span
+                        class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-md whitespace-nowrap"
+                      >
+                        June 2020
+                      </span>
+                    </div>
+                  </div>
+
+                  <p class="text-blue-600 font-semibold text-lg mb-4 italic">
+                    JNMA J Nepal Med Assoc
+                  </p>
+
+                  <p class="text-gray-700 mb-4 leading-relaxed">
+                    An important clinical perspective on the critical nature of
+                    anaphylaxis management, emphasizing the importance of
+                    immediate recognition and intervention in life-threatening
+                    allergic reactions.
+                  </p>
+
+                  <div class="mb-4">
+                    <p
+                      class="text-gray-800 font-mono text-sm bg-gray-50 p-3 rounded-lg border border-gray-200"
+                    >
+                      Yadav B. JNMA J Nepal Med Assoc. 2020 Jun
+                      30;58(226):442-443.
+                    </p>
+                  </div>
+
+                  <div class="flex flex-wrap gap-3 items-center mb-4">
+                    <span
+                      class="bg-blue-100 text-blue-800 px-3 py-1 rounded-lg text-sm font-semibold"
+                    >
+                      DOI: 10.31729/jnma.4939
+                    </span>
+                    <span
+                      class="bg-green-100 text-green-800 px-3 py-1 rounded-lg text-sm font-semibold"
+                    >
+                      PMID: 32788767
+                    </span>
+                    <span
+                      class="bg-purple-100 text-purple-800 px-3 py-1 rounded-lg text-sm font-semibold"
+                    >
+                      PMCID: PMC7580344
+                    </span>
+                  </div>
+
+                  <a
+                    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7580344/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors shadow-md hover:shadow-lg"
+                  >
+                    <span>Read Full Article</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                      />
+                      <polyline points="15,3 21,3 21,9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Research Interests Section -->
+          <div
+            class="mt-16 bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 md:p-12 shadow-lg"
+          >
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">
+              Research Interests
+            </h3>
+            <p
+              class="text-gray-700 text-center leading-relaxed max-w-3xl mx-auto mb-6"
+            >
+              I am actively seeking research opportunities to contribute to
+              evidence-based medical practice. My areas of interest include
+              pediatric medicine, internal medicine, emergency care, and
+              community health.
+            </p>
+            <div class="flex flex-wrap justify-center gap-3">
+              <span
+                class="bg-white px-4 py-2 rounded-full text-blue-600 font-semibold shadow-sm"
+              >
+                Pediatric Medicine
+              </span>
+              <span
+                class="bg-white px-4 py-2 rounded-full text-blue-600 font-semibold shadow-sm"
+              >
+                Internal Medicine
+              </span>
+              <span
+                class="bg-white px-4 py-2 rounded-full text-blue-600 font-semibold shadow-sm"
+              >
+                Emergency Care
+              </span>
+              <span
+                class="bg-white px-4 py-2 rounded-full text-blue-600 font-semibold shadow-sm"
+              >
+                Community Health
+              </span>
+              <span
+                class="bg-white px-4 py-2 rounded-full text-blue-600 font-semibold shadow-sm"
+              >
+                Medical Education
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section
+      class="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 text-white"
+    >
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+          <p class="text-xl mb-12 text-blue-100">
+            Feel free to reach out for consultations, collaborations, or just to
+            connect
+          </p>
+
+          <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div
+              class="bg-white/10 backdrop-blur-sm rounded-xl p-8 hover:bg-white/20 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="mx-auto mb-4"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                ></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <h3 class="text-xl font-semibold mb-2">Email</h3>
+              <a
+                href="mailto:info@doctorbishal.com.np"
+                class="text-blue-100 hover:text-white"
+              >
+                info@doctorbishal.com.np
+              </a>
+            </div>
+
+            <div
+              class="bg-white/10 backdrop-blur-sm rounded-xl p-8 hover:bg-white/20 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="mx-auto mb-4"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <h3 class="text-xl font-semibold mb-2">Location</h3>
+              <p class="text-blue-100">Kathmandu, Nepal</p>
+            </div>
+          </div>
+
+          <div class="flex justify-center space-x-6">
+            <a
+              href="https://np.linkedin.com/in/bishal27"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white/10 hover:bg-white/20 p-4 rounded-full transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a
+              href="https://instagram.com/bishal27"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white/10 hover:bg-white/20 p-4 rounded-full transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="m16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a
+              href="https://facebook.com/bishal27"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white/10 hover:bg-white/20 p-4 rounded-full transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://twitter.com/bishalyd"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white/10 hover:bg-white/20 p-4 rounded-full transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.youtube.com/@medbits"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-white/10 hover:bg-white/20 p-4 rounded-full transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+                ></path>
+                <path d="m10 15 5-3-5-3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8">
+      <div class="container mx-auto px-4 text-center">
+        <p class="mb-2">© 2025 Dr. Bishal Yadav. All rights reserved.</p>
+        <p class="text-sm text-gray-400">
+          Dedicated to evidence-based medicine and lifelong learning
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button
+      id="scroll-to-top"
+      class="fixed bottom-8 right-8 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-40"
+      style="display: none"
+      aria-label="Scroll to top"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="18,15 12,9 6,15"></polyline>
+      </svg>
+    </button>
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      const scrollToTopButton = document.getElementById("scroll-to-top");
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          scrollToTopButton.style.display = "block";
+        } else {
+          scrollToTopButton.style.display = "none";
+        }
+      });
+      scrollToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
+</html>

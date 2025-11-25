@@ -1,0 +1,52 @@
+# Simple Vercel Deployment Guide via GitHub
+
+## Overview
+Deploy your HTML portfolio to Vercel by uploading to GitHub first, then connecting it to Vercel for automatic deployment.
+
+## Step 1: Create GitHub Repository
+1. Go to https://github.com and sign in
+2. Click the "+" icon → "New repository"
+3. Repository name: `bishal-portfolio` (or any name you prefer)
+4. Make it **Public** (so Vercel can access it)
+5. **DO NOT** initialize with README, .gitignore, or license
+6. Click "Create repository"
+
+## Step 2: Upload Your Files to GitHub
+1. Download and install GitHub Desktop: https://desktop.github.com
+2. Open GitHub Desktop
+3. Click "File" → "Clone repository"
+4. Find your new repository and clone it to your computer
+5. Copy all your portfolio files (HTML, CSS, images) into the cloned folder
+6. In GitHub Desktop:
+   - You'll see all files listed
+   - Add a commit message: "Initial portfolio upload"
+   - Click "Commit to main"
+   - Click "Push origin"
+
+## Step 3: Connect to Vercel
+1. Go to https://vercel.com and sign in
+2. Click "Import Project"
+3. Click "Continue with GitHub"
+4. Authorize Vercel to access your GitHub account
+5. Find your repository (`bishal-portfolio`) and click "Import"
+6. Vercel will auto-detect it's a static HTML site
+7. Click "Deploy"
+
+## Step 4: Your Site is Live!
+- Vercel will provide a URL like: `https://bishal-portfolio.vercel.app`
+- Your portfolio is now live worldwide!
+- Any future changes you push to GitHub will auto-deploy
+
+## Making Updates
+1. Edit your files locally
+2. Open GitHub Desktop
+3. Commit and push changes
+4. Vercel automatically redeploys your site
+
+## Important Notes
+- Keep all images in the `images/` folder
+- Make sure `index.html` is in the root directory
+- Vercel provides free hosting, SSL, and global CDN
+- You can add a custom domain later if needed
+
+## That's it! Your portfolio is now live on the internet! 🎉
